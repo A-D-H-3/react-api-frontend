@@ -52,42 +52,40 @@ function ReactForm() {
 
   return (
     <Container>
-      <div>
-        <Form onSubmit={sendQuestion}>
-          <Form.Group className="mb-3">
-            <Form.Label>
-              <h1>Ask me anything</h1>
-            </Form.Label>
-            <Form.Control
-              type="text"
-              placeholder="Type your question here"
-              value={question}
-              onChange={(e) => setQuestion(e.target.value)}
-            />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-          </Button>
-        </Form>
-        <div>
-          <h3>Responses:</h3>
-          {searchDisplay.map((search, index) => {
-            return (
-              <FormResponse
-                key={index}
-                question={search.question}
-                answer={search.answer}
-                answerIndex={index}
-                deleteAnswer={deleteAnswer}
-              />
-            );
-          })}
-        </div>
-        <br />
-        <Button variant="primary" onClick={clearAll}>
-          Clear All
+      <Form onSubmit={sendQuestion}>
+        <Form.Group className="mb-3">
+          <Form.Label>
+            <h1>Ask me anything</h1>
+          </Form.Label>
+          <Form.Control
+            type="text"
+            placeholder="Type your question here"
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+          />
+        </Form.Group>
+        <Button variant="primary" type="submit">
+          Submit
         </Button>
+      </Form>
+      <div>
+        <h3>Responses:</h3>
+        {searchDisplay.map((search, index) => {
+          return (
+            <FormResponse
+              key={index}
+              question={search.question}
+              answer={search.answer}
+              answerIndex={index}
+              deleteAnswer={deleteAnswer}
+            />
+          );
+        })}
       </div>
+      <br />
+      <Button variant="primary" onClick={clearAll}>
+        Clear All
+      </Button>
     </Container>
   );
 }
