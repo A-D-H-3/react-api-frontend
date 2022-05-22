@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//a-d-h-3.github.io/react-chatbox-app/static/css/main.1b7b4700.css",
+    "main.js": "//a-d-h-3.github.io/react-chatbox-app/static/js/main.6f82b026.js",
+    "index.html": "//a-d-h-3.github.io/react-chatbox-app/index.html",
+    "main.1b7b4700.css.map": "//a-d-h-3.github.io/react-chatbox-app/static/css/main.1b7b4700.css.map",
+    "main.6f82b026.js.map": "//a-d-h-3.github.io/react-chatbox-app/static/js/main.6f82b026.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b7b4700.css",
+    "static/js/main.6f82b026.js"
+  ]
+}

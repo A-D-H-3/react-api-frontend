@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.1b7b4700.css","mappings":"AAAA,KAEE,YAAa,CADb,iBAEF,CAEA,gBACE,qBACF","sources":["App.css"],"sourcesContent":[".App {\n  text-align: center;\n  height: 100vh;\n}\n\n.Accordion.Body {\n  background-color: black;\n}\n"],"names":[],"sourceRoot":""}
