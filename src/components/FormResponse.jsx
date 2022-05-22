@@ -15,7 +15,11 @@ function FormResponse(props) {
           <Accordion.Body>
             {props.answer}
             <br />
-            <Button className="deleteAnswer" onClick={handleDelete}>
+            <Button
+              variant="outline-danger"
+              className="deleteAnswer"
+              onClick={handleDelete}
+            >
               Delete
             </Button>
           </Accordion.Body>

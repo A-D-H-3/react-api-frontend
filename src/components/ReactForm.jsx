@@ -42,7 +42,6 @@ function ReactForm() {
   };
 
   const deleteAnswer = (deleteIndex) => {
-    console.log(deleteIndex);
     const newSearchDisplay = searchDisplay.filter((v, index) => {
       return index !== deleteIndex;
     });
@@ -55,16 +54,20 @@ function ReactForm() {
       <Form onSubmit={sendQuestion}>
         <Form.Group className="mb-3">
           <Form.Label>
-            <h1>Ask me anything</h1>
+            <h1>Welcome to "WOYM"</h1>
+            <p>
+              WOYM (What's On Your Mind), is a simple chatbox that can answer
+              question a question or even right a poem!! Try it below.{" "}
+            </p>
           </Form.Label>
           <Form.Control
             type="text"
-            placeholder="Type your question here"
+            placeholder="So... what's on your mind?"
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="outline-primary" type="submit">
           Submit
         </Button>
       </Form>
@@ -83,7 +86,7 @@ function ReactForm() {
         })}
       </div>
       <br />
-      <Button variant="primary" onClick={clearAll}>
+      <Button variant="danger" onClick={clearAll}>
         Clear All
       </Button>
     </Container>
