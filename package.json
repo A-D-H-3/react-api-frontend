@@ -1,4 +1,5 @@
 {
+  "homepage": "https://https://a-d-h-3.github.io/react-chatbox-app/",
   "name": "shopify-fedic",
   "version": "0.1.0",
   "private": true,
@@ -16,6 +17,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-dotenv && react-scripts start",
     "build": "react-dotenv && react-scripts build",
     "test": "react-dotenv && react-scripts test",
@@ -40,6 +43,11 @@
     ]
   },
   "react-dotenv": {
-    "whitelist": ["OPENAI_SECRET"]
+    "whitelist": [
+      "OPENAI_SECRET"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
