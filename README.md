@@ -11,7 +11,7 @@ To send a request you will need to add an API Key from OPENAPI (signup and key l
     5. Once logged in, go to https://beta.openai.com/account/api-keys to get your secret API
     key
 
-Once the API Key has been obtained, go to the ReactForm.jsx file (src/components/ReactForm.jsx), and replace "ADD OPENAI SECRET" in line 28 with the API Key. 
+Once the API Key has been obtained, go to the ReactForm.jsx file (src/components/ReactForm.jsx), and replace "ADD OPENAI SECRET" in line 26 with the API Key. 
 
 Each result will include the original prompt you entered and the response
 from the API.
